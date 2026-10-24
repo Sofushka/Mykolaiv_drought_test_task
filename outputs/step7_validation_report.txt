@@ -1,0 +1,42 @@
+STEP 7 VALIDATION REPORT
+PASS: 38, WARN: 1
+
+[PASS] Years are 2000-2025, no gaps or repeats: 26 years
+[PASS] Season is April-September: months 4-9
+[PASS] ERA5-Land has all 6 monthly images in every season: all years complete
+[PASS] MODIS has at least 10 scenes in every season: min 12, max 12 scenes
+[PASS] No missing water-balance values: 26/26 present
+[PASS] No missing NDVI values: 26/26 present
+[PASS] Water balance in plausible range (-2500..500 mm): range -1570..-789 mm
+[PASS] NDVI in plausible range (0.2..0.8): range 0.424..0.553
+[PASS] Indicators vary between years (not constant or copied): distinct values: WB 26, NDVI 26
+[PASS] Season rain (Apr-Sep) in plausible range (100-700 mm): 161..408 mm
+[PASS] Season potential evaporation in plausible range (600-2000 mm): 1183..1732 mm (ERA5-Land values are known to be high)
+[PASS] ERA5 rain agrees with CHIRPS rain year by year (correlation): r = 0.87 over 26 years
+[PASS] ERA5 and CHIRPS give a similar average amount of rain: ERA5 / CHIRPS = 0.94
+[PASS] Farmland area is identical in every year: 19659 km2, difference between years 0.43 km2
+[PASS] Farmland is 55-90% of the oblast: 82% (19659 of 23949 km2)
+[PASS] Drought table has a row for every year: 26/26 years
+[PASS] Only drought classes 0-4 appear: classes OK
+[PASS] No negative or invalid areas: all areas valid
+[PASS] Moderate+ share is between 0 and 100% in every year: 0.0%..87.2%
+[PASS] Combined index averages about 0 over the 26 years: mean of yearly oblast averages = +0.000 (expected ~0)
+[PASS] Share of all farmland-years that are Mild or worse is 20-45%: 32.2% (about 31% expected from the method)
+[PASS] Share of all farmland-years that are Moderate or worse is 10-25%: 17.9% (about 16% expected from the method), 26 years
+[PASS] Years that are dry AND not green have the largest drought area (rank correlation): rho = 0.97 over 26 years
+[PASS] Drought area follows water balance on its own: rho = 0.93
+[PASS] Drought area follows NDVI on its own: rho = 0.96
+[PASS] District names are the expected four: ['Bashtanskyi', 'Mykolaivskyi', 'Pervomaiskyi', 'Voznesenskyi']
+[PASS] District farmland totals add up to the oblast total: largest difference 0.23 km2
+[PASS] District Moderate+ areas add up to the oblast Moderate+ area: largest difference 0.20 km2
+[PASS] 2007 (known severe drought) is a major drought year: 87.2% Moderate+
+[PASS] 2012 (known severe drought) is a major drought year: 76.8% Moderate+
+[PASS] 2004 (wet / good-harvest year) is not a drought year: 0.0% Moderate+
+[PASS] 2021 (wet / good-harvest year) is not a drought year: 0.0% Moderate+
+[PASS] Year ranking is stable if 2022-2025 are left out of the baseline: rank correlation = 1.00 over 22 years
+[WARN] Same drought years found with the shorter baseline (2000-2021): full: [2007, 2012, 2017, 2018, 2020]; short: [2007, 2009, 2012, 2017, 2018, 2020]
+[PASS] Output file step6_report.html exists and is not empty: 
+[PASS] Output file step6_timeseries.png exists and is not empty: 
+[PASS] Drought map pictures exist: 7 maps found
+[PASS] Report has no missing pictures: 0 picture(s) missing
+[PASS] Report contains the data tables: 2 table(s)
